@@ -1,0 +1,114 @@
+body {
+    background-color: #efdec1;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    margin: 0px auto;
+    padding: 16px;
+    border-radius: 4px;
+    position:relative;
+}
+
+#question {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#choices {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#choices > li {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+#choices > li:hover {
+    background-color: #eee;
+
+}
+
+.selected {
+    background-color: #ddd;
+}
+
+#result {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 75%;
+    width: 80%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.4);
+    transition: 1s;
+}
+
+#result.hidden {
+    transform: translateY(-500px)
+}
+
+.scoreContainer {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 10%;
+    font-size: 25px;
+}
+
+#replayBtn {
+    position:absolute;
+    background-color: #3498bd;
+    box-shadow: 0 8px 0px #2880b9;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    width: 80%;
+    bottom:20%;
+    left: 0;
+    right: 0;
+    text-decoration: none;
+}
+
+#btn {
+    background-color: #3498bd;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 8px 0px #2880b9;
+}
+
+#btn.disabled {
+    background-color: #ccc;
+    box-shadow: 0 8px 0 #bbb;
+    opacity: 0.7;
+}
